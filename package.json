@@ -1,0 +1,37 @@
+{
+  "name": "pub-bot",
+  "version": "1.0.0",
+  "description": "\"pub suggestion slack bot\"",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "prestart": "tsc",
+    "start": "node dist/index.js",
+    "predebug": "tsc",
+    "debug": "node --debug dist/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@slack/client": "^3.10.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^20.0.2",
+    "@types/node": "^8.0.2",
+    "jest": "^20.0.4",
+    "typescript": "^2.3.4"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "ts",
+      "js"
+    ],
+    "transform": {
+      "^.+\\.ts$": "<rootDir>/test/preprocessor.js"
+    },
+    "testMatch": [
+      "<rootDir>/test/**/*.spec.ts"
+    ]
+  }
+}
