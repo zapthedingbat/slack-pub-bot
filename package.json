@@ -14,7 +14,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@slack/client": "^3.10.0"
+    "@slack/client": "^5.0.0"
   },
   "devDependencies": {
     "@types/jest": "20.0.2",
